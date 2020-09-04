@@ -1,0 +1,33 @@
+<%- include ("partials/header") %>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1><img class="hotelicon"
+                    src="https://cdn2.iconfinder.com/data/icons/hotel-and-restaurant-solid-icons-vol-1/64/001-512.png">
+                Selected Ones </h1>
+            <p> Enjoy unforgettable experiences in dream hotels.</p>
+            <a class="btn btn-lg btn-primary" href="/campgrounds/add"> Add hotels</a>
+        </div>
+
+    </header>
+    <div class="row" style="display:flex; flex-wrap: wrap; margin-top: 0;">
+        <% campgrounds.forEach(function(camp){ %>
+        <div class="col-md-3 col-sm-6">
+            <div class="img-thumbnail" id="img-bottom">
+                <img class=" img-fluid" src="<%= camp.image %>">
+                <!-- img-fluid will make the img to fit in the box eve
+                without using the img-thumbnail  -->
+                <div class="caption">
+                    <h4 style="text-align: center;"><%= camp.name %></h4>
+                    <p style="text-align: center;">
+                        <a href="/campgrounds/<%= camp._id %>" class="btn btn-outline-info"> More info </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+
+<%- include ("partials/footer") %>

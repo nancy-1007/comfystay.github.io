@@ -1,0 +1,53 @@
+
+.col-md-12{
+    padding: 0%;
+}
+.bottom{
+    margin-bottom: 0px;
+    padding-left:9px ;
+    padding-right:9px ;
+}
+p{
+    padding: 0px 9px;
+}
+
+h4{
+    padding: 5px 9px 0px;
+    text-transform: capitalize;
+}
+
+p a {
+  padding-top: 5px ;
+}
+
+.container .img-thumbnail{
+    padding: 0px;
+ 
+}
+
+#delete_inline{
+    display: inline;
+}
+
+#img-bottom{
+    margin-bottom: 10%;
+}
+
+#btn{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#showhotel{
+    margin-top: 30px;
+}
+
+.hotelicon{
+    width: 35px;
+    height: 40px;
+}
+
+.loginicon{
+    width:2%;
+    height: 2%;
+}

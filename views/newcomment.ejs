@@ -1,0 +1,30 @@
+<%- include ("partials/header") %>
+
+<div class="container">
+
+    <h1 style="text-align: center;">WRITE A COMMENT FOR <%= campgrounds.name.toUpperCase()%></h1>
+    <div style="width:30%; margin: 0 auto;">
+        <form action="/campgrounds/<%= campgrounds.id %>/comments" method="POST">
+
+            <div class="form-group">
+                <input class=" form-control" type="text" placeholder="comment" name="comment[text]" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <p>
+            <a href="/campgrounds/<%=campgrounds.id%>">Go back</a>
+        </p>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+<%- include ("partials/footer") %>
