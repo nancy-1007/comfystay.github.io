@@ -18,11 +18,12 @@ let campgroundroutes = require("./routes/campgroundrestful"),
 
 
 // CONNECTING MONGOOSE
-mongoose.connect("mongodb://localhost/camp_app_2")
+// mongoose.connect("mongodb://localhost/camp_app_2")
+mongodb://nancy:<password>@cluster0-shard-00-00.ugsny.mongodb.net:27017,cluster0-shard-00-01.ugsny.mongodb.net:27017,cluster0-shard-00-02.ugsny.mongodb.net:27017/<camp_app_2>?ssl=true&replicaSet=atlas-1kgla9-shard-0&authSource=admin&retryWrites=true&w=majority
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
-app.use(express.static("public"))
+app.use(express.static("public"));
 app.use(methodOverride("_method")) //METHOD OVERRIDE
 
 //SESSION
