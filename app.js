@@ -18,7 +18,8 @@ let campgroundroutes = require("./routes/campgroundrestful"),
 
 
 // CONNECTING MONGOOSE
-mongoose.connect("mongodb://localhost/camp_app_2")
+// mongoose.connect("mongodb://localhost/camp_app_2")
+mongoose.connect("mongodb+srv://nancy:clas@mate10@comfystay.irisv.mongodb.net/nancy?retryWrites=true&w=majority")
 
 app.use(bodyParser.urlencoded({ etended: true }));
 app.set("view engine", "ejs");
