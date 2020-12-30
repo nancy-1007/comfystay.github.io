@@ -25,7 +25,7 @@ let campgroundroutes = require("./routes/campgroundrestful"),
 // mongoose.connect("mongodb://localhost/camp_app_2", { useNewUrlParser: true }, { useUnifiedTopology: true })
 mongoose.connect("mongodb+srv://nancy:clas@mate10@comfystay.irisv.mongodb.net/nancy?retryWrites=true&w=majority", { useNewUrlParser: true }, { useUnifiedTopology: true })
 
-app.use(bodyParser.urlencoded({ etended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(methodOverride("_method")) //METHOD OVERRIDE
