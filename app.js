@@ -8,10 +8,8 @@ let express = require("express"),
     passport = require("passport"),
     LocalStratergy = require("passport-local");
 let flash = require('connect-flash')
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 8000;
-}
+let port = process.env.PORT || 8000;
+
 var session = require('express-session')
 var MemoryStore = require('memorystore')(session)
 
